@@ -60,7 +60,7 @@ class UserController
 
         Auth::guard($guard)->logout();
 
-        Session::forget('password_hash_'.$guard);
+        Session::forget('password_hash');
     }
 
     /**
